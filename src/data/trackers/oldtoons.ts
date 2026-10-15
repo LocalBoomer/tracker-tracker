@@ -30,97 +30,119 @@ export const oldtoons: TrackerRegistryEntry = {
 
   // ── Community ───────────────────────────────────────────────────────
   userClasses: [
-    { name: "Pruned", requirements: "Removed for inactivity. 0 DL slots." },
-    { name: "Banned", requirements: "Removed for violating tracker rules. Unlimited DL slots." },
-    { name: "Disabled", requirements: "Temporarily or permanently disabled by staff. 0 DL slots." },
-    { name: "Guest", requirements: "Staff assigned. Unlimited DL slots." },
-    { name: "Validating", requirements: "Waiting for email verification. Unlimited DL slots." },
+    {
+      name: "Pruned",
+      requirements: "Removed for inactivity. 0 DL slots.",
+      outsideLadder: "below",
+    },
+    {
+      name: "Banned",
+      requirements: "Removed for violating tracker rules.",
+      outsideLadder: "below",
+    },
+    {
+      name: "Disabled",
+      requirements: "Temporarily or permanently disabled by staff. 0 DL slots.",
+      outsideLadder: "below",
+    },
+    {
+      name: "Guest",
+      requirements: "Staff assigned.",
+      outsideLadder: "below",
+    },
+    {
+      name: "Validating",
+      requirements: "Waiting for email verification.",
+      outsideLadder: "below",
+    },
     {
       name: "Leech",
-      requirements:
-        "0 B Uploaded, 0.00 Ratio, 0 account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. 0 DL slots.",
+      requirements: "0 DL slots.",
+      outsideLadder: "below",
     },
     {
       name: "User",
-      requirements:
-        "0 B Uploaded, 0.40 Ratio, 0 account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents.",
+      requirements: "0.40 Ratio. Unlimited DL slots, Can upload torrents.",
     },
     {
       name: "PowerUser",
       requirements:
-        "1 TiB Uploaded, 0.40 Ratio, 1 Month account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites.",
+        "1 TiB Uploaded, 0.40 Ratio, 1 Month account age. Unlimited DL slots, Can upload torrents, Can send invites.",
     },
     {
       name: "SuperUser",
       requirements:
-        "5 TiB Uploaded, 0.40 Ratio, 2 Months account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites.",
+        "5 TiB Uploaded, 0.40 Ratio, 2 Months account age. Unlimited DL slots, Can upload torrents, Can send invites.",
     },
     {
       name: "ExtremeUser",
       requirements:
-        "20 TiB Uploaded, 0.40 Ratio, 3 Months account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites, Torrent moderation bypass.",
+        "20 TiB Uploaded, 0.40 Ratio, 3 Months account age. Unlimited DL slots, Can upload torrents, Can send invites, Torrent moderation bypass.",
     },
     {
       name: "InsaneUser",
       requirements:
-        "50 TiB Uploaded, 0.40 Ratio, 6 Months account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites, Torrent moderation bypass.",
+        "50 TiB Uploaded, 0.40 Ratio, 6 Months account age. Unlimited DL slots, Can upload torrents, Can send invites, Torrent moderation bypass.",
     },
     {
       name: "Veteran",
       requirements:
-        "100 TiB Uploaded, 0.40 Ratio, 1 Year account age, N/A average seedtime, 0 B Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+        "100 TiB Uploaded, 0.40 Ratio, 1 Year account age. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, Torrent moderation bypass.",
     },
     {
       name: "Seeder",
       requirements:
-        "0 B Uploaded, 0.40 Ratio, 1 Month account age, 1 Month average seedtime, 5 TiB Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites, HnR Immune, Torrent moderation bypass.",
+        "0.40 Ratio, 1 Month account age, 1 Month average seedtime, 5 TiB Seedsize. Unlimited DL slots, Can upload torrents, Can send invites, HnR Immune, Torrent moderation bypass.",
     },
     {
       name: "Archivist",
       requirements:
-        "0 B Uploaded, 0.40 Ratio, 3 Months account age, 2 Months average seedtime, 10 TiB Seedsize, 0 Uploads. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+        "0.40 Ratio, 3 Months account age, 2 Months average seedtime, 10 TiB Seedsize. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
     },
     {
       name: "Uploader",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
     {
       name: "Trustee",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
     {
       name: "VIP",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, Double Upload, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
     {
       name: "Internal",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
     {
       name: "Editor",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
     {
       name: "Torrent Moderator",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, Can send invites, Freeleech, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
     {
       name: "Bot",
       requirements:
         "Staff assigned. Unlimited DL slots, Can upload torrents, HnR Immune, Torrent moderation bypass.",
+      outsideLadder: "above",
     },
-  ], // Unless stated otherwise all roles have unlimited download privileges,
-  releaseGroups: [
-    { name: "EORMC", description: "Retro Movies Club Encodes and Remux group." },
-    { name: "RMWD", description: "Retro Movies Club WebDL release group." },
-    { name: "OldT", description: "Internal WebDL release group. " },
   ],
+  releaseGroups: [{ name: "OldT", description: "Internal WebDL release group." }],
   bannedGroups: [
     "[Oj]",
     "3LTON",
@@ -187,20 +209,9 @@ export const oldtoons: TrackerRegistryEntry = {
     "4f8c4100292",
     "Azkars",
     "Syncr0ndi",
-  ], // Last three entries have requested to not be uploaded but I assume it's fine to treat them the same here.
-  notableMembers: [
-    "Jhonny (Owner/Internal)",
-    "tenebrific (Admin/Internal)",
-    "maddogfargo (Admin/Internal)",
-    "daemon93 (Moderator/Internal)",
-    "BobSherunkle (Moderator/Internal)",
-    "HDVinnie (Coder)",
-    "Tooner (Coder)",
-    "ZukoXZoku (Torrent Moderator)",
-    "Utena1999 (Torrent Moderator)",
-    "K3V (Torrent Moderator)",
-    "Ziggy1999 (Torrent Moderator)",
   ],
+  notableMembers: [],
+
   // ── Rules ───────────────────────────────────────────────────────────
   rules: {
     minimumRatio: 0.4,
